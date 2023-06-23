@@ -1,5 +1,160 @@
-<html>
+﻿<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Cui-Fang Zhang lab-XIAMEN University</title>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <!-- CSS FILES -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/fontawesome.css" rel="stylesheet" type="text/css">
+    <link href="css/slick.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
 <body>
-hello word
+    <!-- READING POSITION INDICATOR -->
+    <progress value="0" id="eskimo-progress-bar">
+        <span class="eskimo-progress-container">
+            <span class="eskimo-progress-bar"></span>
+        </span>
+    </progress>
+    <!-- SITE WRAPPER -->
+    <div id="eskimo-site-wrapper">
+        <!-- MAIN CONTAINER -->
+        <main id="eskimo-main-container">
+            <div class="container">
+                <!-- SIDEBAR -->
+                <div id="eskimo-sidebar">
+                    <div id="eskimo-sidebar-wrapper" class="d-flex align-items-start flex-column h-100 w-100">
+                        <!-- LOGO -->
+                        <div id="eskimo-logo-cell" class="w-100">
+                            <a class="eskimo-logo-link" href="index.html">
+                                Cui-Fang Zhang Lab
+                            </a>
+                        </div>
+                        <!-- MENU CONTAINER -->
+                        <div id="eskimo-sidebar-cell" class="w-100">
+                            <!-- MOBILE MENU BUTTON -->
+                            <div id="eskimo-menu-toggle">MENU</div>
+                            <!-- MENU -->
+                            <nav id="eskimo-main-menu" class="menu-main-menu-container">
+                                <ul class="eskimo-menu-ul">
+                                    <li><a href="index.html">Research</a>
+                                    </li>
+                                    <li><a href="publications.html">Publications</a>
+    
+                                    </li>
+                                    <li><a href="team.html">Team</a>
+                                    </li>
+                                    <li><a href="join.html">Join</a></li>
+    
+                                </ul>
+                            </nav>
+                        </div>
+                    
+                    </div>
+                </div>
+
+                <!-- INDEX -->
+                <div class="eskimo-page-title" style="margin-right: -110px; padding-right: 110px; opacity: 1;">
+                    <h1><span>Cui-Fang Zhang Lab</span></h1>
+                    <p class="eskimo-page-subtitle">The Cui-Fang Zhang Lab employs a multi-disciplinary approach including genome editing, in vivo and ex vivo electrophysiology, pharmacology, and imaging techniques to understand how the brain functions in health and disease states. Our goal is to identify novel molecular targets and neural circuit manipulations capable of alleviating some neurological disorder symptoms.</p>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-lg-7 order-2 order-lg-1">
+                        <p>The Cui-Fang Zhang Lab employs a multi-disciplinary approach including genome editing, in vivo and ex vivo electrophysiology, pharmacology, and imaging techniques to understand how the brain functions in health and disease states. Our goal is to identify novel molecular targets and neural circuit manipulations capable of alleviating some neurological disorder symptoms.</p>
+                        <p>Est nisi quibusdam admodum ut noster. Quamquam malis illum ex elit, anim arbitrantur cupidatat aute admodum, cernantur noster mentitum cupidatat.</p>
+                        
+                    </div>
+                    <div class="col-12 col-lg-5 order-1 order-lg-2 mb-5 mb-lg-0">
+                        <img src="images/Cuifang Zhang.jpg" alt="Cuifang Zhang" class="img-fluid mx-auto d-block eskimo-img-shadow" />
+                    
+                    </div>
+                </div>
+          
+                </div>
+            </div>
+        </main>
+        <!-- FOOTER -->
+        <footer id="eskimo-footer">
+            <div class="container">
+
+                <!-- CREDITS -->
+                <div class="eskimo-footer-credits">
+                    <p>
+                        © 2023 Cui-Fang Zhang. Powered by Lucky.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- GO TO TOP BUTTON -->
+    <a id="eskimo-gototop" href="#"><i class="fa fa-chevron-up"></i></a>
+    <!-- SLIDE PANEL OVERLAY -->
+    <div id="eskimo-overlay"></div>
+
+    <!-- JS FILES -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/salvattore.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/panel.js"></script>
+    <script src="js/reading-position-indicator.js"></script>
+    <script src="js/custom.js"></script>
+    <!-- POST SLIDER -->
+    <script>
+        (function($) {
+            "use strict";
+            $(document).ready(function() {
+                $('#eskimo-post-slider').slick({
+                    autoplay: true,
+                    autoplaySpeed: 5000,
+                    slidesToScroll: 1,
+                    adaptiveHeight: true,
+                    slidesToShow: 1,
+                    arrows: true,
+                    dots: false,
+                    fade: true
+                });
+            });
+            $(window).on('load', function() {
+                $('#eskimo-post-slider').css('opacity', '1');
+                $('#eskimo-post-slider').parent().removeClass('eskimo-bg-loader');
+            });
+        })(jQuery);
+    </script>
+    <!-- POST CAROUSEL -->
+    <script>
+        (function($) {
+            "use strict";
+            $(document).ready(function() {
+                $('#eskimo-post-carousel').slick({
+                    infinite: false,
+                    slidesToScroll: 1,
+                    arrows: true,
+                    dots: false,
+                    slidesToShow: 3,
+                    responsive: [{
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    }, {
+                        breakpoint: 576,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }]
+
+                });
+                $('#eskimo-post-carousel').css('opacity', '1');
+            });
+        })(jQuery);
+    </script>
 </body>
+
 </html>
